@@ -1,21 +1,72 @@
-# React + TypeScript + Vite
+# Vite React Lab
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small React + TypeScript workspace for fast front-end sketches, interface tests, and strange little web experiments.
 
-While this project uses React, Vite supports many popular JS frameworks. [See all the supported frameworks](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
+This repository is intentionally lightweight: Vite for speed, React for components, TypeScript for guardrails, and ESLint for keeping the edges clean. It is a place to prototype ideas before they become part of a larger site or production build.
 
-## Deploy Your Own
+## Current Shape
 
-Deploy your own Vite project with Vercel.
+- React 18 with TypeScript
+- Vite development server and production build
+- ESLint configured for React hooks and refresh
+- Minimal starter UI kept in place until the next experiment lands
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/vite-react&template=vite-react)
+## Getting Started
 
-_Live Example: https://vite-react-example.vercel.app_
-
-### Deploying From Your Terminal
-
-You can deploy your new Vite project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
+Install dependencies:
 
 ```shell
-$ vercel
+npm install
 ```
+
+Run the development server:
+
+```shell
+npm run dev
+```
+
+Check linting:
+
+```shell
+npm run lint
+```
+
+Create a production build:
+
+```shell
+npm run build
+```
+
+Preview the production build locally:
+
+```shell
+npm run preview
+```
+
+## Project Structure
+
+```text
+src/
+  App.tsx        Main application component
+  App.css        Component-level styles
+  index.css      Global styles
+  main.tsx       React entry point
+public/          Static assets served by Vite
+```
+
+## Working Style
+
+This repo is for small, clean iterations. Keep changes easy to read, name experiments clearly, and document anything that would be confusing to revisit later.
+
+The vibe: polished enough to share, loose enough to keep moving.
+
+## Roadmap
+
+- Replace the starter screen with the first real interface concept.
+- Add screenshots or preview links once the project has a visual direction.
+- Split reusable components into `src/components/` when repetition appears.
+- Add lightweight tests when behavior becomes more than visual exploration.
+
+## Notes
+
+This project is part of the `strangeharvestfilm` GitHub workspace.
